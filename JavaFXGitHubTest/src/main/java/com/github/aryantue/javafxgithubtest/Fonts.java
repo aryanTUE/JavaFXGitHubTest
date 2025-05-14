@@ -8,7 +8,7 @@ import javafx.scene.text.Font;
 
 /**
  *
- * @author 20243325
+ * @author Aryan Shinde
  */
 public class Fonts {
     private static final String DEFAULT_FONT_TITLE = "Bahnschrift";
