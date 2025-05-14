@@ -11,8 +11,8 @@ import javafx.scene.text.Font;
  * @author Aryan Shinde
  */
 public class Fonts {
-    private static final String DEFAULT_FONT_TITLE = "Bahnschrift";
-    private static final int TITLE_FONT_SIZE = 24; 
+    private static final String DEFAULT_FONT_TITLE = "Banschrift";
+    private static final int TITLE_FONT_SIZE = 36; 
     private static final String DEFAULT_FONT = "Arial";
     
     public static Font getTitleFont() {
