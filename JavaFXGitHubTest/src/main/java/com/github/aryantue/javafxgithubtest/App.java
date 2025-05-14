@@ -2,8 +2,6 @@ package com.github.aryantue.javafxgithubtest;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 
@@ -14,12 +12,11 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) {
-        var javaVersion = SystemInfo.javaVersion();
-        var javafxVersion = SystemInfo.javafxVersion();
-
-        var label = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " + javaVersion + ". Welcome to my first JavaFX project."); 
-        var scene = new Scene(new StackPane(label), 450, 800);
-        stage.setScene(scene);
+        Start startScreen = new Start(stage);
+        Scene startScene = startScreen.getStartScreen();
+        
+        stage.setScene(startScene); 
+        stage.setTitle("YourCalc App");
         stage.show();
     }
 
